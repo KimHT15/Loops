@@ -1,24 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loops" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-SC-YGi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="obb-Oq-qgX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="418"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdf-PB-eGh">
+                                        <rect key="frame" x="0.0" y="438" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Array One "/>
+                                        <connections>
+                                            <action selector="arrayOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrD-uQ-u00"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7u-4A-a2a">
+                                        <rect key="frame" x="0.0" y="488" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Array Two"/>
+                                        <connections>
+                                            <action selector="arrayOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dv8-VK-gK0"/>
+                                            <action selector="arrayTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCD-mf-j6l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpc-Jo-FDO">
+                                        <rect key="frame" x="0.0" y="538" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Array Three"/>
+                                        <connections>
+                                            <action selector="arrayThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UsL-QG-a7g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulS-wK-Lg3">
+                                        <rect key="frame" x="0.0" y="588" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Array Four"/>
+                                        <connections>
+                                            <action selector="arrayFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0LV-wq-ikk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-ee-HOw">
+                                        <rect key="frame" x="0.0" y="638" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Array Five"/>
+                                        <connections>
+                                            <action selector="arrayFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dK0-cH-M9M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lk-n1-Btw">
+                                        <rect key="frame" x="0.0" y="688" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Array Six"/>
+                                        <connections>
+                                            <action selector="arraySix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AB3-va-GhU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21o-Gq-LDB">
+                                        <rect key="frame" x="0.0" y="738" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Array Seven"/>
+                                        <connections>
+                                            <action selector="arraySeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gs9-qh-z0w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFp-Mh-Srg">
+                                        <rect key="frame" x="0.0" y="788" width="414" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.74536651389999997" blue="0.65761364899999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Dictionary"/>
+                                        <connections>
+                                            <action selector="arrayFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fft-g7-bWA"/>
+                                            <action selector="dictionary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLX-g7-X1s"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VIe-SC-YGi" secondAttribute="trailing" id="Qt0-eM-9vI"/>
+                            <constraint firstItem="VIe-SC-YGi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RgI-lF-2QT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VIe-SC-YGi" secondAttribute="bottom" id="XDG-AY-V2b"/>
+                            <constraint firstItem="VIe-SC-YGi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mHk-jG-SCe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="viewText" destination="obb-Oq-qgX" id="cDc-s0-emU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
